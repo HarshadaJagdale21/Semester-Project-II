@@ -1,21 +1,26 @@
-i. Introduction of the Topic
+Problem Statement
 
-The topic of the project is "Password Manager Web Application." It is an application that helps users generate, store, and manage passwords securely for different websites or applications in one central location. It emphasizes both usability and security to reduce the risk of weak passwords and improve personal cybersecurity.
+• Most users struggle to remember multiple passwords and often reuse the same ones, leading to security breaches.
+• Lack of user-specific encryption and login makes password managers vulnerable.
+• Many existing tools are either paid or too complex for beginners.
 
-ii. Background
+Objectives
 
-With the rise in online services, users are required to create more and more passwords. Reusing the same password or choosing weak ones increases vulnerability. There is a need for secure password management tools, especially ones that can be accessed anywhere via the web.
+ Objective	                                             Success Metric
+1	Secure login with email/password	                Unique user authentication
+2	Strong password generation	                      Random secure passwords (12+ characters)
+3	Store/view passwords user-specifically	          Logged-in user sees only their data
 
-iii. Problem Statement
 
-Users tend to forget passwords or reuse the same weak passwords across multiple platforms, making them prone to cyberattacks. There is a lack of free and easy-to-use online password management tools that provide strong security and personalization.
+Application Scope
 
-iv. Objectives
+Login/Register (Email + Password)
 
-To develop a secure web application that allows users to save and manage passwords.
+Dashboard to save website, username, password
 
-To implement a strong password generator tool within the application.
+Strong password generator
 
-To ensure that only authenticated users can access their saved data.
+View saved passwords with masking & copy option
 
-To use open-source technologies for affordability and wide accessibility.
+Secure database storage (MySQL)
+
