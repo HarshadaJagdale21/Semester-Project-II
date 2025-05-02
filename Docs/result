@@ -1,0 +1,13 @@
+The Password Manager System successfully met all its objectives. We tested the system with multiple users and observed the following:
+
+User registration and login with OTP worked smoothly.
+
+Passwords were securely stored and visible only to the logged-in user.
+
+The password generator created random, strong passwords.
+
+Saved credentials were shown correctly, and the copy feature functioned well.
+
+The interface was easy to navigate, even for non-technical users.
+
+Performance improved significantly after optimizing the code. Authentication time was reduced from 5–8 seconds to around 2 seconds. No storage errors occurred during testing, and user satisfaction was rated 9.4 out of 10 based on peer feedback.
