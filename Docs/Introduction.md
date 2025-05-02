@@ -4,8 +4,6 @@ The main objectives of this project are:
 
 To provide a secure login and registration system for users using email and password.
 
-To implement OTP-based verification for enhanced security.
-
 To provide a strong password generation tool to help users create secure credentials.
 
 To store passwords in a secure database and display them to users in a masked format.
