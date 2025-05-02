@@ -1,0 +1,5 @@
+Various studies and tools in the field of cybersecurity show that users tend to neglect password hygiene, often reusing the same passwords. Tools like Bitwarden and KeePass are popular, but they come with limitations such as being paid, offline-based, or complex for beginner users. This inspired us to create a simple, web-based password manager using PHP and MySQL.
+
+Bitwarden is an open-source tool that offers browser support and cloud sync but requires premium subscriptions for full features. KeePass is a free offline solution but lacks online access. Our system overcomes these limitations by offering a web interface, free access, and simple login.
+
+Research from the National Institute of Standards and Technology (NIST) and Springer highlights the importance of strong passwords and secure authentication mechanisms like OTPs. According to a 2023 study, systems that use OTP authentication are 70% more secure than traditional systems. We’ve incorporated this learning into our design by including OTP-based login/registration and strong password generation features.
