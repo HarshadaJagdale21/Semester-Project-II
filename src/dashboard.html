@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Password Manager</h2>
+
+    <input type="text" id="site" placeholder="Website (e.g., Facebook)">
+    <input type="text" id="username" placeholder="Username/Email">
+    <input type="text" id="genPassword" placeholder="Password">
+
+    <button onclick="generate()">Generate Strong Password</button>
+    <button onclick="save()">Save Password</button>
+
+    <div id="savedPasswords"></div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

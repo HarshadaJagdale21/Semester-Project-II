@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+
+    <hr>
+
+    <h2>Register</h2>
+    <input type="email" id="reg_email" placeholder="New Email">
+    <input type="password" id="reg_password" placeholder="New Password">
+    <button onclick="register()">Register</button>
+  </div>
+
+  <script>
+    function login() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      fetch("backend/login.php", {
+        method: "POST",
+        body: JSON.stringify({ email, password })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === "success") {
+          sessionStorage.setItem("email", email);
+          window.location.href = "dashboard.html";
+        } else {
+          alert("Login failed: " + data.message);
+        }
+      });
+    }
+
+    function register() {
+      const email = document.getElementById("reg_email").value;
+      const password = document.getElementById("reg_password").value;
+
+      fetch("backend/register.php", {
+        method: "POST",
+        body: JSON.stringify({ email, password })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === "success") {
+          alert("Registered successfully! You can now login.");
+        } else {
+          alert("Registration failed: " + data.message);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+\
